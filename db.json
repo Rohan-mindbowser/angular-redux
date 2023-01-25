@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "name": "Springboot",
+      "author": "Deepak",
+      "cost": 420,
+      "id": 6
+    },
+    {
+      "id": 9,
+      "author": "Deepak kumbhar",
+      "name": "Java",
+      "cost": 10
+    },
+    {
+      "id": 10,
+      "author": "Deepak",
+      "name": "Spring",
+      "cost": 5
+    }
+  ]
+}
