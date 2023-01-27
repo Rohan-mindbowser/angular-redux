@@ -1,4 +1,4 @@
 export interface Appstate {
-    apiStatus: string;
-    apiResponseMessage: string;
+  apiStatus: string;
+  apiResponseMessage: string;
 }

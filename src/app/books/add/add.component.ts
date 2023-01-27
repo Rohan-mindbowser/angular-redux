@@ -10,15 +10,14 @@ import { invokeSaveNewBookAPI } from '../store/books.action';
 @Component({
   selector: 'app-add',
   templateUrl: './add.component.html',
-  styleUrls: ['./add.component.scss']
+  styleUrls: ['./add.component.scss'],
 })
 export class AddComponent implements OnInit {
-
   constructor(
     private store: Store,
     private appStore: Store<Appstate>,
     private router: Router
-  ) { }
+  ) {}
 
   bookForm: Books = {
     id: 0,
@@ -26,10 +25,8 @@ export class AddComponent implements OnInit {
     name: '',
     cost: 0,
   };
- 
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   save() {
     this.store.dispatch(invokeSaveNewBookAPI({ newBook: this.bookForm }));
@@ -39,9 +36,8 @@ export class AddComponent implements OnInit {
         this.appStore.dispatch(
           setAPIStatus({ apiStatus: { apiResponseMessage: '', apiStatus: '' } })
         );
-         this.router.navigate(['/']);
+        this.router.navigate(['/']);
       }
     });
   }
-
 }

@@ -11,19 +11,14 @@ import { AddComponent } from './add/add.component';
 import { FormsModule } from '@angular/forms';
 import { EditComponent } from './edit/edit.component';
 
-
 @NgModule({
-  declarations: [
-    HomeComponent,
-    AddComponent,
-    EditComponent
-  ],
+  declarations: [HomeComponent, AddComponent, EditComponent],
   imports: [
     CommonModule,
     BooksRoutingModule,
     FormsModule,
     StoreModule.forFeature('mybooks', bookReducer),
-    EffectsModule.forFeature([BooksEffect])
-  ]
+    EffectsModule.forFeature([BooksEffect]),
+  ],
 })
-export class BooksModule { }
+export class BooksModule {}

@@ -12,22 +12,22 @@ import { selectBookById } from '../store/books.selector';
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.scss']
+  styleUrls: ['./edit.component.scss'],
 })
 export class EditComponent implements OnInit {
-
-  constructor(private route: ActivatedRoute,
+  constructor(
+    private route: ActivatedRoute,
     private router: Router,
     private store: Store,
-    private appStore: Store<Appstate>) { }
+    private appStore: Store<Appstate>
+  ) {}
 
-    bookForm: Books = {
-      id: 0,
-      author: '',
-      name: '',
-      cost: 0,
-    };
-   
+  bookForm: Books = {
+    id: 0,
+    author: '',
+    name: '',
+    cost: 0,
+  };
 
   ngOnInit(): void {
     let fetchData$ = this.route.paramMap.pipe(
@@ -39,8 +39,7 @@ export class EditComponent implements OnInit {
     fetchData$.subscribe((data) => {
       if (data) {
         this.bookForm = { ...data };
-      }
-      else{
+      } else {
         this.router.navigate(['/']);
       }
     });
@@ -60,5 +59,4 @@ export class EditComponent implements OnInit {
       }
     });
   }
-
 }
