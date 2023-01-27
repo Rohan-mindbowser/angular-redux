@@ -10,11 +10,10 @@ declare var window: any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-
-  constructor(private store: Store, private appStore: Store<Appstate>) { }
+  constructor(private store: Store, private appStore: Store<Appstate>) {}
   books$ = this.store.pipe(select(selectBooks));
 
   deleteModal: any;
@@ -48,5 +47,4 @@ export class HomeComponent implements OnInit {
       }
     });
   }
-
 }

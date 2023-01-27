@@ -1,12 +1,6 @@
 {
   "books": [
     {
-      "id": 10,
-      "author": "Deepak",
-      "name": "Spring",
-      "cost": 5
-    },
-    {
       "id": 11,
       "author": "TOM",
       "name": "Complete JS",
@@ -29,6 +23,20 @@
       "author": "alex",
       "name": "fun js",
       "cost": 200
+    }
+  ],
+  "users": [
+    {
+      "name": "rohan",
+      "email": "r@gmail.com",
+      "address": "pune",
+      "age": 31
+    },
+    {
+      "name": "sid",
+      "email": "s@gmail.com",
+      "address": "pune",
+      "age": 28
     }
   ]
 }
