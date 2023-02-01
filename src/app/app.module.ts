@@ -9,9 +9,10 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { appReducer } from './shared/store/app.reducer';
+import { LandingpageComponent } from './landingpage/landingpage.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LandingpageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

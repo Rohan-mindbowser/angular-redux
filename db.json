@@ -23,6 +23,12 @@
       "author": "alex",
       "name": "fun js",
       "cost": 200
+    },
+    {
+      "id": 17,
+      "author": "test",
+      "name": "Complete JS",
+      "cost": 200
     }
   ],
   "users": [
